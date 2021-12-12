@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <table> <!-- The structure of the calculator -->
+        <thead>
+            <tr id="calculator_display">
+                <td id="display" colspan="4"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="first_row">
+                <td id="delete">Delete</td>
+                <td id="divide">/</td>
+                <td id="multiply">*</td>
+                <td id="subtract">-</td>
+            </tr>
+            <tr id="second_row">
+                <td id="seven">7</td>
+                <td id="eight">8</td>
+                <td id="nine">9</td>
+                <td id="addition" rowspan="2">+</td>
+            </tr>
+            <tr id="third_row">
+                <td id="four">4</td>
+                <td id="five">5</td>
+                <td id="six">6</td>
+            </tr>
+            <tr id="fourth_row">
+                <td id="one">1</td>
+                <td id="two">2</td>
+                <td id="three">3</td>
+                <td id="enter" rowspan="2">Enter</td>
+            </tr>
+            <tr id="fifth_row">
+                <td id="zero" colspan="2">0</td>
+                <td id="decimal">.</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script> <!-- Imports the JavaScript file for usage -->
+</body>
+</html>
