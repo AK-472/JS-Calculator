@@ -1,2 +1,2 @@
-# AK-472.github.io
+# JS-Calculator
 A calculator made using HTML, CSS, and JavaScript.
