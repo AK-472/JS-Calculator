@@ -47,30 +47,19 @@ document.getElementById("addition").onclick = function() {
     document.getElementById("display").innerHTML += " + " 
 };
 document.getElementById("enter").onclick = function() { // Calculates all the numbers on the display
-    for (var i = 0; i < document.getElementById("display").innerHTML.length; i++) {
-        if (document.getElementById("display").innerHTML.charAt(i) === "/") { // Divides the numbers
-            let a = Number(document.getElementById("display").innerHTML.substring(0, i - 1));
-            let b = Number(document.getElementById("display").innerHTML.substring(i + 2, document.getElementById("display").innerHTML.length));
-            let ans = a / b;
-            document.getElementById("display").innerHTML = ans.toString();
-        }
-        if (document.getElementById("display").innerHTML.charAt(i) === "*") { // Multiplies the numbers
-            let a = Number(document.getElementById("display").innerHTML.substring(0, i - 1));
-            let b = Number(document.getElementById("display").innerHTML.substring(i + 2, document.getElementById("display").innerHTML.length));
-            let ans = a * b;
-            document.getElementById("display").innerHTML = ans.toString();
-        }
-        if (document.getElementById("display").innerHTML.charAt(i) === "-") { // Subtracts the numbers
-            let a = Number(document.getElementById("display").innerHTML.substring(0, i - 1));
-            let b = Number(document.getElementById("display").innerHTML.substring(i + 2, document.getElementById("display").innerHTML.length));
-            let ans = a - b;
-            document.getElementById("display").innerHTML = ans.toString();
-        }
-        if (document.getElementById("display").innerHTML.charAt(i) === "+") { // Adds the numbers
-            let a = Number(document.getElementById("display").innerHTML.substring(0, i - 1));
-            let b = Number(document.getElementById("display").innerHTML.substring(i + 2, document.getElementById("display").innerHTML.length));
-            let ans = a + b;
-            document.getElementById("display").innerHTML = ans.toString();
-        }
-      }
+    try{
+        display.value = eval(display.value);
+        
+    }
+
+    catch(err)
+    {
+        alert("Invalid");
+
+        
+
+        
+        
+    }
+}
 };
